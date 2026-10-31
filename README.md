@@ -37,6 +37,10 @@ uv run uvicorn industrial_pm.api:app --app-dir src
 
 See [reproducible synthetic evaluation](docs/synthetic-evaluation.md), [architecture](docs/architecture.md), and [limitations](docs/limitations.md).
 
+## Recruiter demo site
+
+**GitHub Pages deployment pending.** The static demo is generated locally with `uv run industrial-pm-static-demo` and served from `static/`. It shows precomputed, held-out model scores and a threshold explorer; no model runs in the browser. Enable GitHub Pages with **GitHub Actions** as the build/deployment source in repository settings, then merge to `main` to publish. No paid service or Python package is required for the site.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).

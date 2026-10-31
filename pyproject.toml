@@ -22,6 +22,7 @@ dev = ["pytest>=8.3,<9", "ruff>=0.11,<1", "httpx>=0.28,<1"]
 
 [project.scripts]
 industrial-pm = "industrial_pm.cli:main"
+industrial-pm-static-demo = "industrial_pm.static_demo:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/industrial_pm"]

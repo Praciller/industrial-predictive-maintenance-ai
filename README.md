@@ -35,9 +35,8 @@ uv run uvicorn industrial_pm.api:app --app-dir src
 - Precision, recall, F1, average precision (PR-AUC summary), confusion counts, and their denominators.
 - Optional schema-validated FastAPI endpoint with explicit missing-model behavior.
 
-See [architecture](docs/architecture.md) and [limitations](docs/limitations.md).
+See [reproducible synthetic evaluation](docs/synthetic-evaluation.md), [architecture](docs/architecture.md), and [limitations](docs/limitations.md).
 
 ## License
 
 MIT. See [LICENSE](LICENSE).
-

@@ -9,4 +9,3 @@
 The classifier uses histogram gradient boosting with a fixed seed. The baseline is a simple OR across four documented sensor thresholds. The evaluation helper reports threshold metrics and average precision, with raw confusion counts and denominators so class support and errors are visible.
 
 The CLI persists the dataset, fitted bundle, and JSON metrics beneath `artifacts/`. The optional FastAPI module loads a bundle only for `/predict`; without it, the service returns an explicit unavailable status. The stateless endpoint cannot compute a genuine six-hour history window and uses the present values for those rolling feature slots. Use batch evaluation for the meaningful trained feature pipeline.
-

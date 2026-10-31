@@ -39,7 +39,7 @@ See [reproducible synthetic evaluation](docs/synthetic-evaluation.md), [architec
 
 ## Recruiter demo site
 
-**GitHub Pages deployment pending.** The static demo is generated locally with `uv run industrial-pm-static-demo` and served from `static/`. It shows precomputed, held-out model scores and a threshold explorer; no model runs in the browser. Enable GitHub Pages with **GitHub Actions** as the build/deployment source in repository settings, then merge to `main` to publish. No paid service or Python package is required for the site.
+**[Open the interactive recruiter demo](https://praciller.github.io/industrial-predictive-maintenance-ai/)**. GitHub Pages hosts the accessible, read-only threshold explorer with evidence built from held-out synthetic model scores. Its model does **not** execute in the browser: the JSON artifact is reproducibly generated with `uv run industrial-pm-static-demo` and published from `static/` after passing CI. This is not real machine telemetry, a calibrated probability, or a deployment-ready maintenance policy. The Pages site was verified with headless Chrome at 390px and 1365px after the 2026-11-01 release.
 
 ## License
 
